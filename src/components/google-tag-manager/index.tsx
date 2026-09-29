@@ -1,9 +1,9 @@
 'use client'
 
 import Script from 'next/script'
-
-// Google Tag Manager ID
-const GTM_ID = 'GTM-TQ5H8HPR'
+// Google Tag Manager ID: single source of truth shared with the policy pages'
+// analytics disclosure (see src/lib/analytics.config.ts).
+import { GTM_ID } from '@/lib/analytics.config'
 
 export default function GoogleTagManager() {
   return (
